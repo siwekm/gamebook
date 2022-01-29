@@ -1,0 +1,95 @@
+world
+	name:FIT
+	description:Vitej na FITU
+	start:0
+	end:4
+location
+	id:0
+	Name:Lobby
+	Text:Dorazil jsi do lobby, hned na uivtanou na tebe ceka nemile prekvapeni.
+	weapon:ISIC:2
+	potion:Lektvar-zdravi:5:2
+enemy
+	name:Vratny
+	stats:2,0,0,4,0
+option
+	action:Projdi kolem vratneho
+	next_success:1
+	text_success:Vratny je schovany za sklem. Nema jak te zastavit.
+	text_fail:Prohral jsi boj
+option
+	action:Nenapadne podlez po zavorou.
+	next_success:1
+	text_success:Uspesne ses bez ISICU dostal prez vratnici.
+	text_fail:Nepodarilo se ti utect
+
+location
+	id:1
+	Name:333
+	Text:Ucebna PA1
+	weapon:Mechanicka klavesnice:2
+	potion:Lektvar-rychleho-psani:0:3
+enemy
+	name:Vagner
+	stats:4,2,3,4,5
+option
+	action:Udelej progtest
+	next_success:3
+	text_success:Na posledni chvili se ti podarilo odevzdat ulohu.
+	text_fail:Nepodarilo se ti zdolat PA1.
+option
+	action:Okoukej progtest od kamarada
+	next_success:2
+	text_success:Pridanim nahodneho mnozstvi novych radku se ti podarilo uspet.
+	text_fail:Progtest te odhalil.
+
+location
+	id:2
+	Name:333
+	Text:Prednska ZMA
+	weapon: :0
+	potion: :0:0
+enemy
+	name:Kalvoda
+	stats:8,2,3,4,5
+option
+	action:Pokus se zdolat ZMA
+	next_success:3
+	text_success:Na posledni chvili te osvitilo.
+	text_fail:Bez sance.
+
+location
+	id:3
+	Name:333
+	Text:Prednska PA2
+	weapon: :0
+	potion: :0:0
+enemy
+	name:VAGNER
+	stats:8,2,3,4,5
+option
+	action:Pust se do boje na zacatku semestru.
+	next_success:4
+	text_success:Tvrdy boj se vyplatil.
+	text_fail:Padl jsi vycerpanim..
+option
+	action:Nech semestralku na posledni chvili
+	next_success:4
+	text_success:Na posledni chvili se ti podarilo odevzdat semestralku.
+	text_fail:Nepodarilo se ti zdolat PA1.
+
+location
+	id:4
+	Name:Betlemska kaple
+	Text:Podarilo se ti zdolat FIT
+	weapon: :0
+	potion: :0:0 
+enemy
+	name:VSE
+	stats:0,0,0,0,0
+option
+	action:VSE.
+	next_success:4
+	text_success:VSE
+	text_fail:VSE
+
